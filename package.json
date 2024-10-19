@@ -12,7 +12,8 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "e2e": "start-server-and-test dev http://localhost:8080 cy:run",
-    "e2e:open": "start-server-and-test dev http://localhost:8080 cy:open"
+    "e2e:open": "start-server-and-test dev http://localhost:8080 cy:open",
+    "format-html": "prettier ./src/index.html --write"
   },
   "keywords": [],
   "author": "Muhammad Ahsan Ayaz<ahsan.ubitian@gmail.com>",
@@ -33,6 +34,7 @@
     "postcss": "^8.4.4",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.0.1",
+    "prettier": "^3.3.3",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
     "start-server-and-test": "^2.0.0",
