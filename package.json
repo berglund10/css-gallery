@@ -13,7 +13,8 @@
     "cy:open": "cypress open",
     "e2e": "start-server-and-test dev http://localhost:8080 cy:run",
     "e2e:open": "start-server-and-test dev http://localhost:8080 cy:open",
-    "format-html": "prettier ./src/index.html --write"
+    "format-html": "prettier ./src/index.html --write",
+    "format-css": "prettier ./src/styles/styles.css --write" 
   },
   "keywords": [],
   "author": "Muhammad Ahsan Ayaz<ahsan.ubitian@gmail.com>",
