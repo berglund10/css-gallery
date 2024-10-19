@@ -137,3 +137,9 @@ article button:hover {
     color: white;
     cursor: pointer;
 }
+
+@media (max-width: 360px) {
+    .navbar {
+        display: none;
+    }
+}
