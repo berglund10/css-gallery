@@ -14,7 +14,7 @@ header {
 }
 
 header h1 {
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem;
 }
 
 header h2 {
@@ -51,6 +51,7 @@ article p {
   gap: 0.5rem;
   padding-left: 1rem;
 }
+
 .buttons-container span {
   margin-left: auto;
   padding-right: 1rem;
@@ -66,80 +67,86 @@ section {
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 361px) and (max-width: 1024px) {
+@media (361px <= width <= 1024px) {
   article {
     width: auto;
     margin: auto;
   }
+
   section {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+
   main {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
+
   .news-section {
     margin-top: 2rem;
   }
 }
 
-@media (min-width: 1025px) {
+@media (width >= 1025px) {
   article {
     width: auto;
     margin: auto;
   }
+
   section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
   }
+
   main {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
+
   .news-section {
     margin-top: 3rem;
   }
 }
 
 .navbar {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .navbar ul {
-    display: inline-flex;
-    gap: 1rem;
-    list-style-type: none;
-}
-
-li button {
-    padding: 0.5rem;
-    background-color: white;
-    border: 2px solid white;
-}
-
-li button:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
+  display: inline-flex;
+  gap: 1rem;
+  list-style-type: none;
 }
 
 article button {
-    padding: 0.5rem;
-    background-color: white;
-    border: 2px solid grey;
-    border-radius: 5px;
+  padding: 0.5rem;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+li button {
+  padding: 0.5rem;
+  background-color: white;
+  border: 2px solid white;
 }
 
 article button:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
-@media (max-width: 360px) {
-    .navbar {
-        display: none;
-    }
+li button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+@media (width <= 360px) {
+  .navbar {
+    display: none;
+  }
 }
