@@ -27,7 +27,7 @@
       <hr />
       <section>
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="Breaking News 1" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -43,7 +43,7 @@
         </article>
 
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="Breaking News 2" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -59,7 +59,7 @@
         </article>
 
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="Breaking News 3" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -75,7 +75,7 @@
         </article>
 
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="Breaking News 4" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -94,7 +94,7 @@
       <hr />
       <section>
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="International News 1" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -110,7 +110,7 @@
         </article>
 
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="International News 2" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -126,7 +126,7 @@
         </article>
 
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="International News 3" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -142,7 +142,7 @@
         </article>
 
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="International News 4" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -161,7 +161,7 @@
       <hr />
       <section>
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="Sport news 1" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -177,7 +177,7 @@
         </article>
 
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="Sport news 2" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -193,7 +193,7 @@
         </article>
 
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="Sport news 3" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -209,7 +209,7 @@
         </article>
 
         <article>
-          <img src="https://picsum.photos/300/150" alt="Breaking News 1" />
+          <img class="random-image" alt="Sport news 4" />
           <div class="text-container">
             <h2>Heading for article</h2>
             <p>
@@ -225,6 +225,14 @@
         </article>
       </section>
     </main>
+    <script>
+      const images = document.querySelectorAll(".random-image");
+
+      images.forEach((img) => {
+        const randomNumber = Math.floor(Math.random() * 1000);
+        img.src = `https://picsum.photos/300/150?t=${randomNumber}`;
+      });
+    </script>
     <script src="./bundle.js"></script>
   </body>
 </html>
