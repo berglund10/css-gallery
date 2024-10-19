@@ -60,3 +60,30 @@ article p {
   padding-left: 1rem;
   padding-top: 1rem;
 }
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 361px) and (max-width: 1024px) {
+    article {
+      width: auto;
+      margin: auto;
+    }
+    section {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+  }
+
+  @media (min-width: 1025px) {
+    article {
+        width: auto;
+        margin: auto;
+      }
+    section {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+  }
