@@ -79,32 +79,32 @@ section {
   margin-bottom: 2rem;
 }
 
-.navbar ul {
+.navbar__list {
   display: inline-flex;
   gap: 1rem;
   list-style-type: none;
 }
 
-.navbar li button {
+.navbar__button {
   padding: 0.5rem;
   background-color: white;
   border: 2px solid white;
 }
 
-article button:hover {
+.article__button:hover {
   background-color: black;
   color: white;
   cursor: pointer;
 }
 
-li button:hover {
+.navbar__button:hover {
   background-color: black;
   color: white;
   cursor: pointer;
 }
 
 @media (480px <= width <= 1024px) {
-  article {
+  .article {
     width: auto;
     margin: auto;
   }
@@ -126,7 +126,7 @@ li button:hover {
 }
 
 @media (width >= 1025px) {
-  article {
+  .article {
     width: auto;
     margin: auto;
   }
