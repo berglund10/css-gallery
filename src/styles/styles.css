@@ -51,7 +51,7 @@ article button {
   border-radius: 5px;
 }
 
-.buttons-container {
+.article__buttons {
   display: flex;
   align-items: center;
   padding-bottom: 1rem;
@@ -59,12 +59,12 @@ article button {
   padding-left: 1rem;
 }
 
-.buttons-container span {
+.article__buttons span {
   margin-left: auto;
   padding-right: 1rem;
 }
 
-.text-container {
+.article__text {
   padding-left: 1rem;
   padding-top: 1rem;
 }
