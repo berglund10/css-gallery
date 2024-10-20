@@ -120,7 +120,7 @@ body {
     margin-bottom: 2rem;
   }
 
-  .news-section {
+  .news-section__title {
     margin-top: 2rem;
   }
 }
@@ -142,7 +142,7 @@ body {
     margin-bottom: 4rem;
   }
 
-  .news-section {
+  .news-section__title {
     margin-top: 3rem;
   }
 }
