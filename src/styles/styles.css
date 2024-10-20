@@ -51,7 +51,7 @@ body {
   border-radius: 5px;
 }
 
-.article__buttons {
+.article__buttons-container {
   display: flex;
   align-items: center;
   padding-bottom: 1rem;
@@ -64,7 +64,7 @@ body {
   padding-right: 1rem;
 }
 
-.article__text {
+.article__text-container {
   padding-left: 1rem;
   padding-top: 1rem;
 }
